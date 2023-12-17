@@ -1,0 +1,23 @@
+{
+  "name": "site_familial",
+  "version": "1.0.0",
+  "description": "Site familial",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoFram/site_familial.git"
+  },
+  "author": "Bertrand Frammery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HugoFram/site_familial/issues"
+  },
+  "homepage": "https://github.com/HugoFram/site_familial#readme"
+}
