@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="description" content="Municipales 2014, un nouvel elan pour prevessin"/>
+ <meta name="keywords" content="municipales, elan, prevessin, prevessin-moens, aurelie charillon, nouvel elan pour Prevessin, elections municipales" />
+ <meta name="language" content="fr" />
+<meta name="distribution" content="global" />
+<meta name="identifier-url" content="http://www.prevessin-moens2014.fr"/>
+<meta name="author" content="bertrand frammery" />
+<meta name="copyright" content="Un nouvel elan pour prevessin" />
+<meta name="geography" content="France" />
+<meta name="expires" content="never" />
+<title>Elan-Accueil</title>
+
+	<!-- La feuille de styles "base.css" doit être appelée en premier. -->
+<link href="Styles/base.css" rel="stylesheet" type="text/css" />
+<link href="Styles/VBCFP11.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	color: #FF6533
+}
+.style10 {
+	color: #FF6533;
+	font-weight: bold;
+	font-size: x-small;
+}
+.style13 {
+	color: #F00
+}
+.style14 {
+	color: rgb(36, 50, 130)
+}
+.style15 {color: #243282}
+.style16 {color: #243282; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.style17 {color: #243282; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 2.3em; }
+.style18 {font-size: 18px}
+.style19 {
+	font-size: 16px
+}
+.style21 {color: #FF6533; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; }
+#apDiv1 {
+	position:absolute;
+	width:389px;
+	height:60px;
+	z-index:1;
+	left: 853px;
+	top: 741px;
+	visibility: hidden;
+}
+.style24 {
+	font-size: 16px;
+	color: #FF6533;
+}
+-->
+</style>
+<script src="../SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_effectHighlight(targetElement, duration, startColor, endColor, restoreColor, toggle)
+{
+	Spry.Effect.DoHighlight(targetElement, {duration: duration, from: startColor, to: endColor, restoreColor: restoreColor, toggle: toggle});
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    var macIE5 = (navigator.platform ? (navigator.platform == "MacPPC") : false) && (navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(1);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("behavior");
+    document.MM_Time[0][0].frame = 16;
+    document.MM_Time[0][0].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0].lastFrame = 16;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_timelinePlay('Timeline1')">
+
+<div id="global">
+
+	<div id="entete"><img src="Bandeau_tract1120.jpg" alt="banner" width="1120" height="560" border="0" usemap="#Map2" />
+<map name="Map2" id="Map2">
+  <area shape="circle" coords="935,160,16" href="documents/Index.html" target="_parent" alt="Docu" />
+</map></div>
+<!-- #entete -->
+
+    <div id="navigation">
+        <ul>
+            <li class="gauche style10 style15">Accueil</li>
+          <li class="gauche">-</li>
+            <li class="gauche"><a href="equipe.html" class="style7">Notre équipe</a></li>
+          <li class="gauche style13">-</li>
+            <li class="gauche style13"><a href="programme.html">Notre programme</a></li>
+          <li class="gauche style13">-</li>
+          <li class="gauche"><a href="Actu.html" class="style7">Actu/Presse</a></li>
+          <li class="gauche">-</li>
+          <li class="gauche"><a href="Votre_avis.php">Votre avis</a></li>
+          <li class="gauche">-</li>
+          <li class="gauche"><a href="faire-un-don.php">Faire un don</a></li>
+          <li class="gauche">-</li>
+          <li class="gauche"><a href="soutien.html">Soutien</a></li>
+          <li class="gauche">-</li>
+          <li class="gauche"><a href="voter.html">Voter</a></li>
+          <li class="gauche">-</li>
+          <li class="droite"><a href="contacts.php">Contacts</a></li>
+          <li class="droite">-</li>
+          <li class="droite"><a href="Allo_Paulo.html">Allo Paulo!</a></li>
+          <li class="droite">-</li>         
+
+         
+
+      </ul>
+    </div><!-- #navigation -->
+    <div id="centre">
+    <marquee style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: rgb(0, 0, 255); letter-spacing: 10pt; font-weight: bold; background-color: #6CC3C9;" scrolldelay="30" class="marquee" id="Goudy">
+ <p class="style14">Merci pour votre confiance. Nous ferons tout notre possible pour que vous soyez fiers de votre choix!</p>
+ </marquee>
+  <h2 align="left" class="style16">Les résultats du vote du 23 mars </h2>
+        <ul>
+          <li class="style15"> Suffrages exprimés : 1940 (taux de participation : 51.8%)</li>
+          <li class="style15">Bulletins nuls : 53</li>
+          <li class="style15">Votes pour &quot;Prévessin pour tous&quot; : 861 (45.6% des suffrages exprimés)</li>
+          <li class="style15">Votes pour &quot;un nouvel élan pour Prévessin-Moëns&quot; : 1026 (54.4% des suffrages exprimés)</li>
+        </ul>
+      <div id="principal">
+        <h2 class="style17">Madame, Monsieur,</h2>
+        <h3 align="justify" class="style15">J'ai décidé de me présenter aux élections municipales de mars 2014 afin de me mettre au service de tous les habitants de notre commune.</h3>
+        <h3 align="justify" class="style15">J'ai réuni autour de moi une équipe de femmes et d'hommes passionnés. Ils représentent des générations différentes et sont riches d'expériences complémentaires.</h3>
+        <h3 align="justify" class="style15">Quatre élus de la minorité actuelle me rejoignent. Forts de leur expérience communale, ils participent activement aux projets de la liste. Cette liste d'union de la droite et du centre est porteuse d'une vision pour construire le Prévessin-Moëns de demain.</h3>
+        <p><img src="declaration Aurelie.jpg" alt="declaration" width="654" height="233" /></p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><div align="center"><img src="liste690.jpg" alt="equipe" width="690" height="288" border="0" usemap="#Map4" />
+              <map name="Map4" id="Map4">
+                <area shape="circle" coords="467,156,24" href="Liste/Aurelie_Charillon.html" alt="AGC" />
+                <area shape="circle" coords="41,101,19" href="Liste/Laure_Ansellem.html" alt="Laure" />
+                <area shape="circle" coords="147,76,21" href="Liste/Francis_Rogard.html" />
+                <area shape="circle" coords="633,122,24" href="Liste/Denis_Pourcher.html" alt="DEnis" />
+                <area shape="circle" coords="153,76,4" href="#" alt="Francis" />
+                <area shape="circle" coords="294,104,16" href="Liste/Maurice_Coin.html" alt="Maurice" />
+                <area shape="circle" coords="433,89,16" href="Liste/Bernard_Chauvet.html" alt="Bernard" />
+                <area shape="circle" coords="349,70,17" href="Liste/Emmanuelle_Vanesse.html" alt="Emmanuelle_V" />
+                <area shape="circle" coords="407,55,15" href="Liste/Bertrand_Milcamps.html" alt="Bertrand_M" />
+                <area shape="circle" coords="575,73,15" href="Liste/Emmanuel_Barthes.html" alt="Emmanuel_B" />
+                <area shape="circle" coords="473,84,22" href="Liste/Emmanuelle_deMalezieux.html" alt="Emmanuelle_dM" />
+                <area shape="circle" coords="233,89,19" href="Liste/Valerie_Gouteux.html" alt="Valerie" />
+                <area shape="circle" coords="538,97,16" href="Liste/Bertrand_Frammery.html" alt="Bertrand_F" />
+                <area shape="circle" coords="508,98,16" href="Liste/Aude_Etcheberry.html" alt="Aude" />
+                <area shape="circle" coords="418,133,19" href="Liste/Elisabeth_Decouz.html" alt="ED" />
+                <area shape="circle" coords="152,144,22" href="Liste/Agathe_Bousser.html" alt="AB" />
+                <area shape="circle" coords="351,110,18" href="Liste/Eric_Imobersteg.html" alt="EI" />
+              <area shape="circle" coords="556,143,22" href="Liste/Brigitte_Guerquin.html" alt="BG" />
+              <area shape="circle" coords="382,99,17" href="Liste/Severine_Rall.html" alt="SR" />
+              <area shape="circle" coords="605,90,17" href="Liste/Walter_Granpre.html" alt="WG" />
+              <area shape="circle" coords="253,125,20" href="Liste/JeanClaude_Charlier.html" alt="JCC" />
+              <area shape="circle" coords="283,62,19" href="Liste/Francois_Guitton.html" alt="FG" />
+              <area shape="circle" coords="79,117,21" href="Liste/JeanLuc_Boudry.html" alt="JLB" />
+              <area shape="circle" coords="209,120,20" href="Liste/Dominique_Thierry.html" alt="DT" />
+              <area shape="rect" coords="661,260,694,290" href="liste2400.jpg" alt="zoom" />
+              </map>
+              <map name="Map3" id="Map3">
+                <area shape="circle" coords="41,101,19" href="Liste/Laure_Ansellem.html" alt="Laure" />
+                <area shape="circle" coords="147,76,21" href="Liste/Francis_Rogard.html" />
+                <area shape="circle" coords="633,125,24" href="Liste/Denis_Pourcher.html" alt="DEnis" />
+                <area shape="circle" coords="153,76,4" href="#" alt="Francis" />
+                <area shape="circle" coords="294,104,16" href="Liste/Maurice_Coin.html" alt="Maurice" />
+                <area shape="circle" coords="433,89,16" href="Liste/Bernard_Chauvet.html" alt="Bernard" />
+                <area shape="circle" coords="349,70,17" href="Liste/Emmanuelle_Vanesse.html" alt="Emmanuelle_V" />
+                <area shape="circle" coords="407,55,15" href="Liste/Bertrand_Milcamps.html" alt="Bertrand_M" />
+                <area shape="circle" coords="575,73,15" href="Liste/Emmanuel_Barthes.html" alt="Emmanuel_B" />
+                <area shape="circle" coords="473,84,22" href="Liste/Emmanuelle_deMalezieux.html" alt="Emmanuelle_dM" />
+                <area shape="circle" coords="233,89,19" href="Liste/Valerie_Gouteux.html" alt="Valerie" />
+                <area shape="circle" coords="542,94,20" href="#" alt="Bertrand_F" />
+                <area shape="circle" coords="508,98,16" href="Liste/Aude_Etcheberry.html" alt="Aude" />
+                <area shape="circle" coords="383,102,16" href="#" alt="Severine" />
+                <area shape="circle" coords="470,155,29" href="Liste/Aurelie_Charillon.html" alt="Aurelie" />
+              </map>           
+            
+            </div></td>
+          </tr>
+          <tr>
+            <td><div align="center" class="style15"><em>23 membres de notre liste (cliquer sur les visages pour des détails sur les personnes ou en bas à droite pour agrandir)</em></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+       
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><div align="center"><a href="DL07122013.jpg"></a></div></td>
+          </tr>
+        </table>
+
+      </div>
+      <div id="secondaire">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="20">&nbsp;</td>
+        </tr>
+        
+        <tr>
+          <td height="20">&nbsp;</td>
+        </tr>
+      </table>
+
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="20">&nbsp;</td>
+        </tr>
+      </table>
+      <table width="100%" border="3" cellpadding="4" cellspacing="0" bordercolor="#6CC3C9">
+        <tr>
+          <td width="301" align="center"><h3 align="center">&nbsp;&nbsp;<span class="style18">&nbsp;<a href="mailto:prevessin2014@gmail.com">prevessin2014@gmail.com</a></span></h3></td>
+            <td width="61"><div align="center"><img src="Facebook.png" alt="face" width="44" height="44" border="0" usemap="#Map" /></div></td>
+        </tr>
+        </table>
+      </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="36" colspan="2" class="style16 style19">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="36" colspan="2"><ul>
+            <li class="style24"><span class="style19">Réunion publique du 21 mars:<br /> <a href="RP2103.html">les photos</a>, <a href="ReunionPublique_21032014-V07.pdf">la présentation</a></span></li>
+          </ul></td>
+        </tr>
+
+        <tr>
+       <td colspan="2"><ul>
+            <li class="style16"><a href="Affiche_electorale.html" class="style19">Affiche électorale</a></li>
+          </ul></td>
+        </tr>        
+        <tr>
+          <td colspan="2"><ul>
+            <li class="style16"><a href="tractage.html" class="style19">Premier tract</a></li>
+          </ul></td>
+        </tr>        
+        <tr>
+          <td colspan="2"><ul>
+            <li class="style16"><a href="marche.html" class="style19">Sur le marché de Prévessin</a></li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td colspan="2"><ul>
+            <li class="style16"><a href="Eclat.html" class="style21">Visite à l'association &quot;Éclat&quot;</a></li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td colspan="2"><ul>
+            <li class="style16"><a href="Pompiers.html" class="style19">Visite chez nos pompiers</a></li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="29%"><a href="armoiries.html"><img src="Armoiries_Prevessin100.gif" alt="armoiries" width="100" height="113" /></a></td>
+          <td width="71%"><div align="center" class="style15"><a href="armoiries.html">Les armoiries de la commune:<br />leur origine</a></div></td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;<script type="text/javascript" src="http://compteur.websiteout.net/js/13/4/156/0">
+</script> </td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+      </table>
+      
+      </div>
+      <!-- #secondaire -->
+    </div>
+  <!-- #centre -->
+  <div id="footer">
+  
+    <p align="center" class="footer">Un Nouvel Elan pour Prévessin-Moëns - Aurélie CHARILLON 185 chemin des Pugins - 01280 - Prévessin Moëns &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e-mél : <a href="mailto:prevessin2014@gmail.com">prevessin2014@gmail.com</a></p>
+  </div>
+</div><!-- #global -->
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="-1,-4,43,43" href="https://www.facebook.com/pages/Aurélie-Charillon-Un-nouvel-élan-pour-Prévessin-Moëns/615519038495555?ref=hl" target="_parent" alt="facebook" />
+</map>
+</body>
+</html>

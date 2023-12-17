@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Patatemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="hugo frammery" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Pratique</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+p.MsoNormal {
+margin-top:0cm;
+margin-right:0cm;
+margin-bottom:10.0pt;
+margin-left:0cm;
+line-height:115%;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style><style type="text/css">
+<!--
+body,td,th {
+	color: #FF0000;
+}
+-->
+</style>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<style type="text/css">
+<!--
+table.MsoNormalTable {
+line-height:115%;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #036;
+	background-color: #99CCFF;
+	background-repeat: repeat;
+}
+
+/* ~~ Sélecteurs d'éléments/balises ~~ */
+ul, ol, dl { /* En raison des variations entre les navigateurs, il est conseillé d'attribuer une valeur de zéro aux marges intérieures et aux marges des listes. A des fins de cohérence, vous pouvez définir les valeurs désirées dans cette zone ou dans les éléments de liste (LI, DT, DD) qu'elle contient. N'oubliez pas que les paramètres que vous définissez ici se répercuteront sur la liste .nav, sauf si vous rédigez un sélecteur plus spécifique. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la suppression de la marge supérieure résout un problème où les marges sortent de leur div conteneur. La marge inférieure restante l'éloignera de tout élément qui suit. */
+	padding-right: 15px;
+	padding-left: 15px; /* l'ajout de la marge intérieure aux côtés des éléments à l'intérieur des divs, et non aux divs proprement dit, évite le recours à des calculs de modèle de boîte. Une autre méthode consiste à employer une div imbriquée avec marge intérieure latérale. */
+}
+a img { /* ce sélecteur élimine la bordure bleue par défaut affichée dans certains navigateurs autour d'une image lorsque celle-ci est entourée d'un lien. */
+	border: none;
+}
+/* ~~ La définition du style des liens de votre site doit respecter cet ordre, y compris le groupe de sélecteurs qui créent l'effet de survol. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* à moins que vous ne définissiez un style particulièrement exclusif pour vos liens, mieux vaut prévoir un soulignement, qui garantit une identification visuelle rapide. */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* ce groupe de sélecteurs offrira à un navigateur au clavier la même expérience de survol que celle d'une personne employant la souris. */
+	text-decoration: none;
+}
+
+/* ~~ ce conteneur à largeur fixe entoure les autres divs ~~ */
+.container {
+	width: 1004px;
+	background: #FFF;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	border-width: 0px;
+}
+
+/* ~~ aucune largeur n'est attribuée à l'en-tête. Il occupera toute la largeur de votre mise en page. Il contient un espace réservé pour une image, qui doit être remplacé par votre logo lié. ~~ */
+.header {
+	background: #ADB96E;
+	background-color: #FFF;
+	border-width: 0px;
+}
+
+/* ~~ Informations de mise en page. ~~ 
+
+1) La marge intérieure n'est placée qu'en haut et/ou en bas de la div. Les éléments à l'intérieur de cette div posséderont une marge intérieure sur les côtés. Vous évitez ainsi de devoir recourir à des « calculs de modèle de boîte ». N'oubliez pas que si vous ajoutez une marge intérieure latérale ou une bordure à la div proprement dite, elle sera ajoutée à la largeur que vous définissez pour créer la largeur totale. Vous pouvez également supprimer la marge intérieure de l'élément dans la div et placer une seconde div à l'intérieur, sans largeur et possédant une marge intérieure appropriée pour votre concept.
+
+*/
+
+.content {
+	padding: 10px 0;
+}
+
+/* ~~ Pied de page ~~ */
+.footer {
+	padding: 10px 0;
+	background: #CCC49F;
+}
+
+/* ~~ classes flottant/effacement diverses ~~ */
+.fltrt {  /* cette classe peut servir à faire flotter un élément depuis la droite sur votre page. L'élément flottant doit précéder l'élément à côté duquel il doit apparaître sur la page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* cette classe peut servir à faire flotter un élément depuis la gauche sur votre page. L'élément flottant doit précéder l'élément à côté duquel il doit apparaître sur la page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* cette classe peut être placée sur une div <br /> ou vide, en tant qu'élément final suivant la dernière div flottante (dans le #container) si le paramètre #footer est supprimé ou retiré du #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+<div class="header">
+    <table width="1004" border="0">
+      <tr>
+        <th width="257" scope="col"><img src="Images/IMG_4973.JPG" alt="Insérer le logo ici" name="Insert_logo" width="259" height="173" id="Insert_logo" style="background: #C6D580; display:block; background-color: #CCC;" /></th>
+        <th width="730" scope="col"><img src="Images/Titre_3.jpg" width="730" height="180" border="0" usemap="#Map" /></th>
+      </tr>
+    </table> 
+<!-- end .header --></div><table width="1004" border="0">
+  <tr>
+   
+  </tr>
+</table>
+
+    
+  <div class="content">
+    <ul id="MenuBar2" class="MenuBarHorizontal">
+      <li><a class="MenuBarItemSubmenu" href="Theorie.html">Calculs théoriques</a>
+        <ul>
+          <li><a href="Theorie.html#Notre_idee_en_bref">Notre idée en bref</a></li>
+          <li><a href="Theorie.html#Calcul_des_gaz">Energie libérée par les gaz</a>
+          	<ul>
+              <li><a href="Theorie.html#Le_methane">Méthane</a></li>
+              <li><a href="Theorie.html#Le_propane">Propane</a></li>
+              <li><a href="Theorie.html#Le_butane">Butane</a></li>
+              <li><a href="Theorie.html#Choix_du_gaz">Choix du gaz</a></li>
+          	</ul>
+          </li>
+          <li><a href="Theorie.html#Volume_de_gaz">Volume de gaz à injecter</a>
+       		 <ul>
+               <li><a href="Theorie.html#Volume_chambre">Volume de la chambre de combustion</a></li>
+               <li><a href="Theorie.html#Volume_butane">Volume de butane</a></li>
+               <li><a href="Theorie.html#Quantite_de_matiere">Quantité de matière</a></li>
+             </ul>
+          <li><a href="Theorie.html#Calcul_vitesse">Vitesse théorique initiale</a>
+         	 <ul>
+               <li><a href="Theorie.html#Calcul_des_gaz">Energie libérée dans la chambre de combustion</a></li>
+          	   <li><a href="Theorie.html#Energie_chaleur">Transformation de l'énergie en chaleur</a></li>
+               <li><a href="Theorie.html#Chaleur_pression">Transformation de la chaleur en pression</a></li>
+               <li><a href="Theorie.html#Pression_Exercee">Force exercée sur la pomme de terre</a></li>
+               <li><a href="Theorie.html#Travail_forces">Travail des forces</a></li>
+               <li><a href="Theorie.html#Vitesse_initiale">Vitesse initiale</a></li>
+          	</ul>
+          <li><a href="Theorie.html#Choix_angle">Choix de l'angle de tir</a></li>
+          <li><a href="Theorie.html#Equation_trajectoire">Simulation de la trajectoire</a>
+   	         <ul>
+               <li><a href="Theorie.html#Soient">Ce que l'on a</a></li>
+          	   <li><a href="Theorie.html#Donc">Ce que l'on en déduit</a></li>
+               <li><a href="Theorie.html#Vecteur_v">Coordonnées du vecteur vitesse</a></li>
+               <li><a href="Theorie.html#Vecteur_a">Coordonnées du vecteur accélération</a></li>
+               <li><a href="Theorie.html#Equation">Equation de la courbe</a></li>
+               <li><a href="Theorie.html#Conclusion">Conclusion</a></li>
+            </ul> 
+           <li><a href="Theorie.html#Longueur_tir">Longueur du tir</a>
+           <ul>
+               <li><a href="Theorie.html#Simplification">Simplification de a,b et c</a></li>
+          	   <li><a href="Theorie.html#Delta">Calcul de delta</a></li>
+               <li><a href="../Patator/Theorie.html#X"r>Recherche des racines</a></li>
+               <li><a href="Theorie.html#Longueur">Calcul de la longueur</a></li>
+            </ul> 
+        </ul>
+      </li>
+     <li><a class="MenuBarItemSubmenu" href="Pratique.html">Application concrète</a>
+        <ul>
+          <li><a href="Pratique.html#Fabrication">Fabrication du patator</a>
+          <ul>
+          	  <li><a href="Pratique.html#Materiel">Matériel</a></li>
+              <li><a href="Pratique.html#Etape1">Préparation de l'allume-gaz</a></li>
+              <li><a href="Pratique.html#Etape2">Raccordement allume-gaz</a></li>
+              <li><a href="Pratique.html#Etape3">Raccord entre les pièces</a></li>              
+          	</ul>
+          </li>
+          <li><a href="Pratique.html#Ameliorations">Des améliorations</a>
+          	<ul>
+          	  <li><a href="Pratique.html#Manometre">Régulation de l'injection du gaz</a></li>
+              <li><a href="Pratique.html#Pied">Orientation du canon</a></li>
+              <li><a href="Pratique.html#Collier">Simplification de la recharge</a></li>
+          	</ul>
+          </li>
+          <li><a href="Pratique.html#Tirs">Les tirs</a></li>
+          <li><a href="Pratique.html#Longueur">Longueur effective des tirs</a></li>
+        </ul>
+      </li>
+      <li><a href="Conclusion.html">Conclusions</a></li>
+      <li><a class="MenuBarItemSubmenu" href="Annexes.html">Annexes</a>
+        <ul>
+          <li><a href="Annexes.html#Armes">Catégories d'armes</a></li>
+          <li><a href="Annexes.html#Piezo">Effet Piézoélectrique</a></li>
+          <li><a href="Annexes.html#Bibliographie">Bibliographie</a></li>
+          <li><a href="Annexes.html#Betisier">Betisier du patator</a></li>
+          <li><a href="Annexes.html#Tableau_liaison">Tableau des énergies de liaison</a></li>
+          <li><a href="Annexes.html#Patates">Après l'effort, le réconfort</a></li>
+          <li><a href="Annexes.html#html">Le codage HTML</a></li>
+        </ul>
+      </li>
+    </ul>
+ 
+    <h1 align="center">&nbsp;</h1>
+    <!-- InstanceBeginEditable name="EditRegion3" -->
+    <h1 align="center"><a name="Pratique_haut" id="Pratique_haut"></a><img src="Images/Application_concrete.jpg" width="825" height="95" /></h1>
+    <p align="justify">A présent que nous avons déterminé théoriquement la longueur d'un titr de patator, il nous faut réaliser l'expérience de façon concrète de sorte à pouvoir comparer les résultats effectifs à la théorie. Pour ce faire, il est nécessaire de fabriquer un de ces canons à pommes de terre de façon à ce qu'il permette d'obtenir les conditions de tir décrites dans les calculs théoriques, à savoir l'utilisation du butane, l'inclinaison du canon selon un angle de 45°, l'injection d'une quantité précise de gaz pour que la combustion soit optimale, et les mêmes dimensions de la chambre de combustion et du canon que dans les calculs. Puis nous devrons réaliser des tirs et analyser d'une part la vitesse initiale de la pomme de terre, et d'autre la distance effective qui sépare le canon du point d'impact du projectile avec le sol.&nbsp;</p>
+    <h2 align="justify"><a name="Fabrication" id="Fabrication"></a>Fabrication du patator</h2>
+    <p align="justify">Nous allons donc nous intéresser à la construction de ce fameux patator et décrire les différentes étapes de la fabrication de notre engin.</p>
+    <h3 align="justify"><a name="Materiel" id="Materiel"></a>Matériel nécessaire</h3>
+    
+    <p align="justify">Pour commencer, nous allons vous présenter la liste du matériel qu'il nous a fallu acheter pour assembler notre projet.</p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Un tube de PVC  de 100 mm de diamètre, et de 70 cm de long.</span></p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Un tube de PVC  de 50 mm de diamètre, et de 50 cm de long. </span></p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Un allume-gaz.</span></p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Deux raccords  femelle/femelle, 100 mm de diamètre.</span></p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Un bouchon à  pas de vis, 100 mm de diamètre.</span></p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Un réducteur 100  mm-50 mm.</span></p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Il faut aussi  : une grande vis, une quinzaine de petites vis, de la colle à PVC, un foret de 2  mm de diamètre, du scotch.</span></p>
+    <p align="justify" class="MsoNormal" style="line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:12.0pt; ">-Et comme  outils : un tournevis, et une visseuse-perceuse.</span></p>
+    <h3 align="justify"><a name="Etape1" id="Etape1"></a>Préparation de l'allume-gaz</h3>
+    <p align="justify">Le patator fonctionne grâce à une étincelle qui se produit dans la chambre de combustion, pleine de gaz. 
+Suivant ce principe, il nous a fallu commencer par démonter notre allume-gaz, acheté exprès, pour récupérer les deux fils, qui produisent l’arc électrique. Pour ce faire, il nous avons dû commencer par vider la réserve de gaz de l’appareil, en appuyant avec un tournevis dans l’orifice prévu pour le recharger. Il nous a ensuite suffit de tout démonter, pour ne garder que les deux fils, que nous avons en partie dénudé, et l'élément piezzo servant à déclencher l’étincelle en question.</p>
+    <h3 align="justify"><a name="Etape2" id="Etape2"></a>Raccord de l'allume-gaz à la chambre de combustion</h3>
+    <p align="justify">Pour attacher l’allume-gaz à la chambre de combustion, il nous fallait un moyen de mettre les fils suffisamment proches l’un de l’autre, de manière à ce que l’étincelle passe (c’est-à-dire pas plus de 10mm de distance), mais il fallait en plus que l’arc électrique ait lieu au contact du gaz. Le problème étant : si nous laissions les fils dans la chambre de combustion, ils fondraient au moment de la combustion des gaz dès la première utilisation, alors que nous souhaitions faire une série de nombreux tirs.
+Nous nous sommes donc renseignés sur différents sites internet et il s’est avéré que la solution à laquelle les utilisateurs de patator ont le plus souvent recours est de percer le tube avec deux vis jouant le rôle d’électrodes, dont les extrémités sont suffisamment proches l’un de l’autre, à l’intérieur du tube, pour que l’étincelle se forme. En effet, les vis étant conductrice, il suffit d’enrouler les fils autour de ces vis, de manière à ce que l’étincelle se produise non pas à l’extrémité des fils, mais aux extrémités des vis. Il ne reste plus alors qu’à étanchéifier avec de la colle.</p>
+<p align="justify">Durant cette étape, nous avons rencontré un problème, car nous avions placé les vis de manière parallèle, ayant pour résultat la formation de l’arc électrique à l’extérieur du tube, car les vis étaient plus proches l’une de l’autre à l’extérieur qu’à l’intérieur de la chambre de combustion, et l’électricité choisit toujours le chemin le plus court.
+Nous avons donc dû enlever une des vis, reboucher le trou avec du mastic de manière à garder notre étanchéité, puis replacer la vis de biais, de manière à ce qu’elles soient à 10mm de distance au niveau des pointes, et que le reste du corps des vis soit plus éloigné.</p>
+<div align="justify">
+  <table width="789" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="487"><div align="center"><img src="Images/Arc_electrique_schema.jpg" width="487" height="238" /></div></td>
+        <td width="302"><div align="center"><img src="Images/Patator3.jpg" width="300" height="297" /></div></td>
+      </tr>
+    <tr>
+      <td><img src="Images/P1070018.JPG" width="400" height="365" /></td>
+        <td><div align="center"><img src="Images/P1070019.JPG" width="400" height="300" /></div></td>
+      </tr>
+  </table>
+</div>
+<p align="justify">&nbsp;</p>
+<p align="justify">&nbsp;</p>
+<p align="justify">Nous avons ensuite tout simplement fixé le piézo avec du ruban adhésif, un qui tient bien, étant donné qu’il faut appuyer relativement fort sur l’interrupteur pour déclencher l’étincelle. Puis nous pouvions observer la formation de l’arc électrique dans la chambre de combustion, que l’on distingue nettement dans l’obscurité du tube PVC.</p>
+<p align="justify"><img src="Images/P1070277.JPG" width="700" height="318" /></p>
+<h3 align="justify"><a name="Etape3" id="Etape3"></a>Raccord entre les pièces</h3>
+    <p align="justify">Comme vous pouvez le constater sur ce schéma, les pièces s'emboitent entre elles, selon l'ordre suivant (de gauche à droite):</p>
+ <p align="justify">-Bouchon, qui fonctionne par « vissage » ;</p>
+<p align="justify">-Raccord ;</p>
+<p align="justify">-Tube de 100mm de diamètre et de 70cm de long ;</p>
+<p align="justify">-Raccord/Réducteur ;</p>
+<p align="justify">-Au niveau du rectangle rose, s’emboite le canon, de 50mm de diamètre, et de 50cm de long.</p>
+    <p align="justify"><img src="Images/Schema_assemblage.jpg" width="902" height="173" /></p>
+    <p align="justify">Pour l’assemblage final, nous aurions pu choisir de simplement coller les pièces entre elles, mais nous avons eu peur que l’assemblage ne soit pas suffisamment solidaire au moment des tirs. Ainsi, nous avons préféré ne prendre aucun risque, et rajouter des vis en plus de notre colle, qui sert à étanchéifier le tout.
+Nous avons donc commencé par placer trois vis au niveau de chaque raccord, pour un total de neuf vis. En effet, contrairement à ce que l’on peut voir sur le schéma, tout à droite, nous avons trouvé une pièce pour notre patator, qui fait à la fois raccord et réducteur, de sorte à ce que nous ayons un raccord de moins à visser.
+Pour ce qui est du dernier raccord, entre le réducteur et le canon, nous n’avons pas non plus utiliser de vis, étant donné qu’il faut retirer le canon pour recharger à chaque coup. Nous avons dû utiliser un autre système pour le maintenir durant les tirs, que nous détaillerons plus bas.
+Après avoir placé toutes les vis, nous les avons recouvertes de mastic, toujours dans un souci d’étanchéité.
+Après cette dernière étape, le patator est terminé !</p>
+    <div align="justify">
+      <table width="938" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="346"><div align="center"><img src="Images/P1070027.JPG" width="340" height="180" /></div></td>
+          <td width="246"><div align="center"><img src="Images/P1070026.JPG" width="240" height="180" /></div></td>
+          <td width="346"><div align="center"><img src="Images/P1070028.JPG" width="340" height="180" /></div></td>
+        </tr>
+      </table>
+    </div>
+    <p align="justify">&nbsp;</p>
+    <p align="justify" class="style1"><a href="#Pratique_haut">Haut</a></p>
+    <h2 align="justify"><a name="Ameliorations" id="Ameliorations"></a>Des améliorations pour coller à la théorie</h2>
+    <p align="justify">Jusque là, le patator que nous avons réalisé est tout à fait basique et ne peut en aucun cas être utilisé de manière scientifique car il lui manque des outils indispensables à nos expériences.
+    <h3 align="justify"><a name="Manometre" id="Manometre"></a>Régulation de l'injection de gaz</h3>
+    <p align="justify">En fabricant le patator de la manière décrite ci-dessus, il faudrait se  servir de laque comme combustible, que l’on introduirait par le bouchon. Or,  nous voulons être en mesure de choisir la quantité de gaz que l’on va injecter,  pour connaître l’exacte quantité d’énergie qui se dégage de la combustion. </p>
+<p align="justify">Pour y parvenir, nous avons percé un trou dans la chambre  de combustion, dans lequel nous avons placé une valve, que nous avions récupéré  d’une chambre à air de vélo. Cette valve, une fois fixée à l’aide de colle,  permet de positionner un manomètre entre   la chambre à combustion et notre bouteille de butane. Ce manomètre est  un outil servant à mesurer la pression à l’intérieur du tube. Cette pression,  le patator étant étanche, augmente avec l’introduction du gaz, et nous permet  de connaître le volume de gaz injecté.</p>
+<div align="justify">
+  <table width="560" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="366" align="center" valign="middle"><div align="center"><img src="Images/P1070278.JPG" width="560" height="360" /></div></td>
+      </tr>
+    <tr>
+      <td height="506" align="center" valign="middle"><div align="center"><img src="Images/P1070279.JPG" width="560" height="500" /></div></td>
+      </tr>
+  </table>
+</div>
+<p align="justify">&nbsp;</p>
+<h3 align="justify"><a name="Pied" id="Pied"></a>Orientation du canon</h3>
+	<p align="justify">Nous avons déterminé précédemment que l’angle de tir  optimal est 45° pour le canon. Nous avons donc dû trouver un moyen de  systématiquement tirer de cet angle. <br />
+Nous avons opté pour   se servir d’une barre en bois, que nous avons taillé de manière à ce  qu’elle soit évasée au sommet, et que l’on puisse poser notre engin dessus sans  qu’il ne tombe.  <br />
+Cette barre de bois est découpée,  pour qu’elle fasse 43,84 cm de longueur. En  effet, nous avons calculé, grâce au sinus, que notre barre devait faire 43.84  cm de longueur, pour que nous ayons un angle de tir de 45°, et que nous  plantions cette barre perpendiculairement au sol, comme indiqué sur le schéma  ci-dessous.</p>
+    <p align="justify"><img src="Images/Pied du patator.jpg"/></p>
+    <p align="justify">Nous prenons 62 cm comme hypoténuse, car il s’agit de  la distance entre la base du patator, et la valve, qui nous permet de le poser  sur le pied sans qu’il ne glisse. Nous rajoutons 10cm à la barre de bois pour  pouvoir l’enfoncer dans le sol, avec l’aide d’un maillet. Nous veillons à ce  qu’elle soit droite grâce à un niveau.</p>
+   <h3 align="justify"><a name="Collier" id="Collier"></a>Simplification de la recharge du projectile</h3>
+   <p align="justify">Puisque nous souhaitons établir des statistiques, il  va nous falloir effectuer de nombreux tirs et cela implique d’avoir à recharger  de nombreuses fois le canon. Le problème est que pour garantir une plus grande  étanchéité, le canon est très serré dans le réducteur ce qui rend et difficile  et dangereux pour le patator le fait d’enlever et de remettre le tube de PVC.  Nous avons donc taillé de petites fentes de part et d’autre du réducteur pour  rendre celui-ci plus flexible, et nous avons ajouté un collier que l’on peut  resserrer ou desserrer à l’aide d’un tournevis. Ainsi l’introduction et le  retrait du canon est plus simple mais l’étanchéité n’en est pas amoindrie.</p>
+   <p align="justify"><img src="Images/Collet.jpg" width="640" height="360" /></p>
+   <p align="justify">Et voilà le patator est terminé et voici à quoi il ressemble.</p>
+   <p align="justify"><img src="Images/Patator2.jpg" width="812" height="265" /></p>
+   <h3 align="justify">Fabrication et tir</h3>
+   
+   
+   
+   <div align="justify">
+     <table width="960" border="0" align="center">
+       <tr>
+         <td><script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0','width','960','height','540','id','FLVPlayer','src','FLVPlayer_Progressive','flashvars','&MM_ComponentVersion=1&skinName=Clear_Skin_3&streamName=Video/Patator&autoPlay=false&autoRewind=false','quality','high','scale','noscale','name','FLVPlayer','salign','lt','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','FLVPlayer_Progressive' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="960" height="540" id="FLVPlayer">
+  <param name="movie" value="FLVPlayer_Progressive.swf" />
+  <param name="salign" value="lt" />
+  <param name="quality" value="high" />
+  <param name="scale" value="noscale" />
+  <param name="FlashVars" value="&MM_ComponentVersion=1&skinName=Clear_Skin_3&streamName=Video/Patator&autoPlay=false&autoRewind=false" />
+  <embed src="FLVPlayer_Progressive.swf" flashvars="&MM_ComponentVersion=1&skinName=Clear_Skin_3&streamName=Video/Patator&autoPlay=false&autoRewind=false" quality="high" scale="noscale" width="960" height="540" name="FLVPlayer" salign="LT" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" />       
+  </object></noscript></td>
+       </tr>
+     </table>
+   </div>
+   <p align="justify"><a href="#Pratique_haut">Haut</a></p>
+   <h2 align="justify"><a name="Tirs" id="Tirs"></a>Les Tirs</h2>
+   <p align="justify">Une fois que le patator a été terminé, nous avons pu procéder aux tirs qui allaient nous permettre d'avoir connaissance d'une vitesse initiale réelle. Nous pourrions ensuite l'appliquer aux calculs, à la place de celle que nous avions trouvée par la théorie, pour plus de justesse dans notre prévision de la longueur des tirs. (<a href="Theorie.html#Calcul_vitesse">voir théorie</a>)</p>
+   <h3 align="justify"><a name="Vitesse_pratique" id="Vitesse_pratique"></a>Vitesse initiale effective</h3>
+   <p align="justify">Nous avons, dans la partie théorique, déterminé  la distance théorique qu’un tir devrait parcourir, en négligeant les frottements. Or, pour obtenir cette longueur, nous avions besoin d’une vitesse de départ. Nous avons commencé par en calculer une théorique, puis nous avons convenu qu’il serait intéressant de mesurer la vitesse de départ que nous obtenions par la pratique, pour nous rendre compte de notre degré d’imprécision.</p>
+   <p align="justify">Nous avons donc décidé de directement mesurer la vitesse de notre projectile à la sortie du canon, de sorte à obtenir une courbe de trajectoire théorique plus fidèle à la réalité. En effet, avec la vitesse de départ obtenue par calcul, à savoir 45 mètres par seconde, nous en arrivions à une portée de tir de 207 mètres.</p>
+   <p align="justify">Pour mesurer la vitesse effective, nous avons eu recours au logiciel Aviméca. Le principe de ce logiciel repose sur l’exploitation d’images, obtenues grâce à la décomposition d’une vidéo, image par image. Cette décomposition permet de voir la position du projectile en fonction du temps, durant le tir. En effet, il suffit d’entrer une échelle dans le logicielle, grâce à un élément de l’arrière-plan, dont on connaît la taille, pour ensuite placer un point, grâce au curseur, sur la position du projectile pour chaque image, comme on peut le voir sur l’image ci-dessous.</p>
+   <p align="justify"><em>(cliquer sur les photos pour les agrandir)</em></p>
+   <div align="justify">
+     <table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
+       <tr>
+         <td width="501" align="center"><div align="center"><a href="Avimeca1.html" target="_blank"><img src="Images/Avimeca1s.jpg" width="498" height="266" /></a></div></td>
+         <td width="601" align="center"><div align="center"><a href="Avimeca2.html" target="_blank"><img src="Images/Avimeca2s.jpg" width="498" height="265" /></a></div></td>
+       </tr>
+       <tr>
+         <td width="501" align="center"><div align="center"><a href="Avimeca3.html" target="_blank"><img src="Images/Avimeca3s.jpg" width="498" height="266" /></a></div></td>
+         <td width="601" align="center"><div align="center"><a href="Avimeca4.html" target="_blank"><img src="Images/Avimeca4s.jpg" width="498" height="266" /></a></div></td>
+       </tr>
+       <tr>
+         <td width="501" align="center"><div align="center"><a href="Avimeca5.html" target="_blank"><img src="Images/Avimeca5s.jpg" width="498" height="264" /></a></div></td>
+         <td width="601" align="center"><div align="center"><a href="Avimeca6.html" target="_blank"><img src="Images/Avimeca6s.jpg" width="498" height="266" /></a></div></td>
+       </tr>
+     </table>
+   </div>
+   <p align="justify">&nbsp;</p>
+   <p align="justify">Cependant, ce ne fût pas si facile, car notre projectile part très vite, et nous n’avions donc pas assez d’images exploitables avec une caméra normale, filmant 25 images par secondes. En effet, nous étions obligés de filmer relativement près du patator, car si nous prenions trop de recul, nous ne distinguions pas la pomme de terre. Le fait de se rapprocher nous faisait obtenir une vidéo dans laquelle la pomme de terre sortait du cadre en à peine deux images, sur lesquels on avait du mal à voir l’emplacement précis du projectile. Mais nous avons pu contourner le problème en nous procurant, le temps de la vidéo, une caméra de 50 images par seconde, qui, sans être très précise non plus, nous a permis de mesurer la vitesse de départ, à savoir 40 mètres par seconde.</p> 
+  <p align="justify">Toutefois, le peu d’images que nous obtenions n’étaient toujours pas suffisant pour que le logiciel en question établisse une trajectoire précise et exploitable du tir. La seule donnée que nous avons donc pu tirer d’Aviméca est la vitesse initiale de la pomme de terre à sa sortie du canon mais cela nous suffit pour comparer le résultat effectif avec la théorie.</p>
+  
+  <h3 align="justify"><a name="Longueur" id="Longueur"></a>Longueur effective des tirs</h3>
+  <p align="justify">La mesure de la vitesse de départ nous ayant permis de prévoir une longueur de tir d’environ 163.5 mètres, il nous reste à confronter ce résultat à la réalité, c’est-à-dire la distance que l’on va mesurer entre notre point de tir et notre point de chute.</p>
+<p align="justify">Le patator a une portée de tir de plus d’une centaine de mètres. Il nous a donc été nécessaire de trouver un lieu où nous pouvions effectuer nos tirs sans déranger personne ni causer de dégâts matériels aux alentours. Nous avons opté pour un champ relativement proche, qui présentait l’avantage d’être relativement plat, ce qui permet d’obtenir une longueur de tir fiable, étant donné que si le lieu de réception du projectile est plus bas ou plus haut que le point de tir, le résultat se verra faussé de plusieurs mètres, ce qui n’est pas négligeable.</p> 
+<p align="justify">Nous avons eu de la chance, dans le sens où, le jour des tirs, le sol était gelé, et la terre tassée, ce qui nous permettait de circuler sur le champ (sans l’abimer, ce dernier étant en friche) avec notre odomètre, un outil doté d’une roue (sur le schéma ci-contre), qui, lorsqu’on le fait rouler à côté de soi, en marchant par exemple, compte les tours de roues, et parvient à déterminer, de cette manière, la distance que l’on parcourt.</p>
+<p align="justify">&nbsp;</p>
+<p align="justify">&nbsp;</p>
+<div align="justify">
+  <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="386"><div align="center"><img src="Images/P1070176.JPG" width="380" height="287" /></div></td>
+        <td width="198"><div align="center"><img src="Images/Odometre.jpg" width="192" height="287" /></div></td>
+        <td width="386"><div align="center"><img src="Images/P1070180.JPG" width="380" height="287" /></div></td>
+      </tr>
+  </table>
+</div>
+<p align="justify">&nbsp;</p>
+<p align="justify">Et voici les résultats que l'on obtient accompagnés de petites statistiques :</p>
+<div align="left"></div>
+<div align="center">
+  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="566" style="width:424.6pt;margin-left:2.75pt;border-collapse:collapse;">
+    <tr style="height:12.75pt;">
+      <td width="121" nowrap="nowrap" colspan="2" valign="bottom" style="width:91.0pt;border:solid windowtext 1.0pt;border-right:solid black 1.0pt;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Longueur des tirs</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:solid windowtext 1.0pt;border-left:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Effectifs</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:solid windowtext 1.0pt;border-left:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Fréquences</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Minimum</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border:solid windowtext 1.0pt;border-left:none;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">122</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:navy;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="navy"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">122</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;border-top:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Maximum</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">162</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:blue;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="blue"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">130</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;border-top:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Etendue</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">40</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#3366FF;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#3366FF"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">133</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;border-top:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Moyenne</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">141.27</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:aqua;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="aqua"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">135</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;border-top:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Médiane</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">138.5</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#99CCFF;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#99CCFF"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">136</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">2</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.1</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;border-top:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Premier quartile</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">136</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#CCFFFF;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#CCFFFF"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">137</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">2</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.1</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;border-top:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Troisième quartile</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">146</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#CCFFCC;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#CCFFCC"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">138</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">2</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.1</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;border:solid windowtext 1.0pt;border-top:none;background:silver;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="silver"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">Espace interquartile</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">10</span></p></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#FFFF99;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#FFFF99"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">139</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#FFCC99;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#FFCC99"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">143</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">3</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.15</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#FFCC00;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#FFCC00"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">145</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#FF9900;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#FF9900"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">146</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:#FF6600;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#FF6600"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">147</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">2</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.1</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:red;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="red"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">151</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;background:maroon;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="maroon"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">155</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border:none;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+    <tr style="height:12.75pt;">
+      <td width="24" nowrap="nowrap" valign="bottom" style="width:17.9pt;border:solid windowtext 1.0pt;border-top:none;background:#993300;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;" bgcolor="#993300"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">&nbsp;</span></p></td>
+      <td width="97" nowrap="nowrap" valign="bottom" style="width:73.1pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">162</span></p></td>
+      <td width="55" nowrap="nowrap" valign="bottom" style="width:41.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">1</span></p></td>
+      <td width="78" nowrap="nowrap" valign="bottom" style="width:58.7pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"><p class="MsoNormal" align="right" style="margin-bottom:.0001pt;text-align:right;line-height:normal;"><span style="font-family:'Verdana','sans-serif'; font-size:10.0pt; color:#003399; ">0.05</span></p></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="135" nowrap="nowrap" valign="bottom" style="width:101.45pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+      <td width="88" nowrap="nowrap" valign="bottom" style="width:66.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:12.75pt;"></td>
+    </tr>
+  </table>
+</div>
+<p align="justify"><a href="#Pratique_haut">Haut</a></p>
+    <!-- InstanceEndEditable --></div>
+  
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="-2,-2,729,180" href="Index.html" alt="" />
+</map><script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("Menu_deroulant", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+      </script>
+</body>
+<!-- InstanceEnd --></html>
