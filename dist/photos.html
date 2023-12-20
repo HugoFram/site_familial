@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* Add CSS for styling thumbnails */
+    .thumbnail {
+      width: 100px; /* Set the width of the thumbnails */
+      height: 100px; /* Set the height of the thumbnails */
+      object-fit: cover; /* Ensure the entire image is visible within the thumbnail dimensions */
+      cursor: pointer; /* Change cursor to pointer on hover for clickable effect */
+      margin: 2px;
+    }
+    #enlargedImg {
+      display: none; /* Hide the enlarged image container by default */
+    }
+    .enlargedImgContent {
+      width: 1000px; /* Set the width of the enlarged picture */
+      height: 1000px; /* Set the height of the enlarged picture */
+      object-fit: cover; /* Ensure the entire image is visible within the thumbnail dimensions */
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div id="thumbnails">
+    <!-- Thumbnails will be dynamically added here -->
+  </div>
+  <div id="enlargedImg">
+    <img id="enlargedImgContent" src="" alt="Enlarged Image" class="enlargedImgContent">
+  </div>
+  <script>
+    const thumbnailsContainer = document.getElementById('thumbnails');
+    const enlargedImgContainer = document.getElementById('enlargedImg');
+    const enlargedImgContent = document.getElementById('enlargedImgContent');
+
+    fetch('photos/photos.json') // Replace with the actual path to your JSON file
+      .then(response => response.json())
+      .then(data => {
+        data.images.forEach(imageName => {
+          const img = document.createElement('img');
+          img.src = imageName;
+          img.classList.add('thumbnail');
+          img.addEventListener('click', function() {
+            enlargedImgContent.src = this.src;
+            enlargedImgContainer.style.display = 'block';
+          });
+          thumbnailsContainer.appendChild(img);
+        });
+      })
+      .catch(error => console.error('Error fetching images:', error));
+
+    // Close the enlarged image when clicked
+  </script>
+</body>
+</html>
