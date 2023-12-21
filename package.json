@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "browser-sync start --server \"dist\" --files \"dist\""
+    "watch": "browser-sync start --server \"dist\" --files \"dist\"",
+    "deploy:dev": "scp -r -P 22 dist/ ftp_bertrand@frammery.org@ssh.strato.com:/SiteFrammeryDeveloppement"
   },
   "repository": {
     "type": "git",
