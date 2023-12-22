@@ -1,0 +1,231 @@
+/* ==============================================
+   FEUILLE DE STYLES DES GABARITS HTML/CSS --- 08
+   © Elephorm & Alsacreations.com
+   Conditions d'utilisation:
+   http://creativecommons.org/licenses/by/2.0/fr/
+   ============================================== */
+
+
+/* --- COULEURS --- */
+
+/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
+   uniquement les couleurs de fond (propriétés background) et les couleurs
+   du texte (propriété color).
+   Pour modifier la disposition des blocs, voir plus bas dans la feuille de
+   styles la partie «positionnement». */
+
+/* Général */
+body {
+	color: #666;
+	background: #FFF;
+}
+a {
+	color: #FF6533;
+}
+a:hover, a:focus {
+	color: #FF4C00;
+}
+
+/* Navigation */
+#navigation {
+	background: #DEDEDE;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #273CB1;
+	border-right-color: #273CB1;
+	border-bottom-color: #273CB1;
+	border-left-color: #273CB1;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+#navigation a {
+	color: #F00;
+	padding: 6px;
+	line-height: 1.5;
+	text-decoration: none;
+}
+#navigation li.droite {
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
+	font-size: 1em;
+}
+
+/* Menu de navigation */
+
+#navigation ul {
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#navigation li.gauche {
+	float: left;
+	margin-right: 5px;
+	font-size: 1em;
+	font-style: normal;
+}
+#footer img {
+	border: thin solid #999;
+	padding: 0px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* Bloc central */
+#centre {
+}
+
+/* Contenu principal */
+#principal {
+	color: #181A12;
+	background: #FFF; /* -> 2 */
+	text-align: justify;
+}
+#principal a {
+	color: #99C;
+}
+#principal a:hover, #principal a:focus {
+	color: #009;
+}
+#principal h2 {
+	border-top-width: 2px;
+	border-top-style: dotted;
+	border-top-color: #666;
+	padding-top: 10px;
+	margin-top: 0px;
+}
+
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+	padding: 20px 5px;
+}
+#global {
+	width: 1120px;
+	margin: 0px auto 0; /* -> 3 */
+}
+
+/* En-tête */
+#entete {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* Bloc central */
+#centre {
+	width: 100%; /* -> 4 */
+	overflow: hidden; /* -> 4 */
+}
+
+/* Contenu principal */
+#principal {
+	float: left; /* -> 5 */
+	width: 560px;
+	padding: 10px 20px 10px 0px;
+}
+#principal > :first-child {
+	margin-top: 10px;
+}
+#principal p, #principal li {
+	line-height: 1.4;
+	font-size: 1em;
+}
+
+/* Contenu secondaire */
+#secondaire {
+	margin-left: 560px; /* -> 6 */
+	margin-right: 0px;
+	padding: 10px 0 10px 10px;
+	border-left-width: thin;
+	border-left-style: dotted;
+	border-left-color: #999;
+	background-color: #FFF;
+	line-height: 1.3em;
+	text-align: left;
+}
+#secondaire p {
+	text-align: left;
+}
+#secondaire img {
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: thin solid #666;
+}
+#secondaire ul {
+	font-size: 0.8em;
+}
+
+/* Mention de copyright */
+#copyright {
+	margin: 20px 0;
+	font-size: .85em;
+	text-align: left;
+}
+#footer {
+	background-color: #DEDEDE;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-top-color: #273CB1;
+	border-right-color: #273CB1;
+	border-bottom-color: #273CB1;
+	border-left-color: #273CB1;
+	clear: both;
+}
+#principal table {
+	font-size: 0.8em;
+	text-align: left;
+}
+#principal td {
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#principal img {
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: thin solid #666;
+}
+#footer li {
+	font-size: 0.8em;
+}
+#sansbordure img {
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#flashinfo  {
+	background-color: #FFF;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border: thin solid #03F;
+}
