@@ -1,24 +1,80 @@
 {
   "images": [
-    "photos/1694612194584.jpg",
-    "photos/1694612194812.jpg",
-    "photos/1694612261162.jpg",
-    "photos/1694612261476.jpg",
-    "photos/1694612404909.jpg",
-    "photos/1694612405328.jpg",
-    "photos/1694612405425.jpg",
-    "photos/1694612405840.jpg",
-    "photos/1694612407024.jpg",
-    "photos/1694612407197.jpg",
-    "photos/1694612407804.jpg",
-    "photos/1694612407997.jpg",
-    "photos/1694612408444.jpg",
-    "photos/1698609693894.jpg",
-    "photos/1698609694189.jpg",
-    "photos/1701006515393.jpg",
-    "photos/1701006515708.jpg",
-    "photos/1701007117507.jpg",
-    "photos/1701007119336.jpg",
-    "photos/1701007120425.jpg"
+    {
+      "filename": "/photos/1694612194584.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612194812.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612261162.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612261476.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612404909.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612405425.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612405840.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612407024.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612407197.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612407804.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612407997.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1694612408444.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1698609693894.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1698609694189.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1701006515393.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1701006515708.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1701007117507.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1701007119336.jpg",
+      "page": 1
+    },
+    {
+      "filename": "/photos/1701007120425.jpg",
+      "page": 1
+    }
   ]
 }

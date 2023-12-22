@@ -1,29 +1,64 @@
 const fs = require('fs');
 const path = require('path');
 
-const folderPath = 'dist/photos'; // Replace with the actual path to your image folder
-const jsonFilePath = 'dist/photos/photos.json'; // Replace with the desired path for the output JSON file
-
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error('Error reading the folder:', err);
-    return;
+const paths = [
+  {
+    folderPath: 'dist/Voyages/USA2015/images/',
+    jsonFilePath: 'dist/Voyages/USA2015/images/photos.json',
+    filename: '/Voyages/USA2015/images/'
+  },
+  {
+    folderPath: 'dist/Voyages/Socorro2017/Renum/',
+    jsonFilePath: 'dist/Voyages/Socorro2017/Renum/photos.json',
+    filename: '/Voyages/Socorro2017/Renum/'
   }
+  ,
+  {
+    folderPath: 'dist/photos/',
+    jsonFilePath: 'dist/photos/photos.json',
+    filename: '/photos/'
+  }
+];
 
-  const imageFiles = files.filter(file => {
-    const fileExtension = path.extname(file).toLowerCase();
-    return ['.jpg', '.jpeg', '.png', '.gif'].includes(fileExtension);
-  });
-
-  const jsonData = {
-    images: imageFiles.map(filename => ('photos/' + filename))
-  };
-
-  fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2), err => {
+paths.forEach(_path => {
+  console.log(_path);
+  fs.readdir(_path.folderPath, (err, files) => {
+  
     if (err) {
-      console.error('Error writing JSON file:', err);
+      console.error('Error reading the folder:', err);
       return;
     }
-    console.log('JSON file with image list has been created successfully.');
+  
+    const imageFiles = files.filter(file => {
+      const fileExtension = path.extname(file).toLowerCase();
+      return ['.jpg', '.jpeg', '.png', '.gif'].includes(fileExtension);
+    });
+  
+    // Generate paginated data
+    const imagesPerPage = 48;
+    const paginatedImages = [];
+    let currentPage = 0;
+    imageFiles.forEach((filename, index) => {
+      if (index % imagesPerPage === 0) {
+        currentPage++;
+      }
+      paginatedImages.push({
+        filename: _path.filename + filename,
+        page: currentPage
+      });
+    });
+  
+    // Construct JSON data with paginated images
+    const jsonData = {
+      images: paginatedImages
+    };
+  
+    fs.writeFile(_path.jsonFilePath, JSON.stringify(jsonData, null, 2), err => {
+      if (err) {
+        console.error('Error writing JSON file:', err);
+        return;
+      }
+      console.log('JSON file with paginated images list has been created successfully in ', _path.folderPath);
+    });
   });
 });
