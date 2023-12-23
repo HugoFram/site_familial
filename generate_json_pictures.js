@@ -3,20 +3,14 @@ const path = require('path');
 
 const paths = [
   {
-    folderPath: 'dist/Voyages/USA2015/images/',
-    jsonFilePath: 'dist/Voyages/USA2015/images/photos.json',
-    filename: '/Voyages/USA2015/images/'
+    folderPath: 'dist/Voyages/USA2015/maxi/',
+    jsonFilePath: 'dist/Voyages/USA2015/maxi/photos.json',
+    filename: '/Voyages/USA2015/maxi/'
   },
   {
     folderPath: 'dist/Voyages/Socorro2017/Renum/',
     jsonFilePath: 'dist/Voyages/Socorro2017/Renum/photos.json',
     filename: '/Voyages/Socorro2017/Renum/'
-  }
-  ,
-  {
-    folderPath: 'dist/photos/',
-    jsonFilePath: 'dist/photos/photos.json',
-    filename: '/photos/'
   }
 ];
 
