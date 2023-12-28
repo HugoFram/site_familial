@@ -8,34 +8,34 @@ const paths = [
     filename: '/Voyages/USA2015/maxi/'
   },
   {
-    folderPath: 'dist/Voyages/Socorro2017/photos/terre/mexico/',
-    jsonFilePath: 'dist/Voyages/Socorro2017/photos/terre/mexico/photos.json',
-    filename: '/Voyages/Socorro2017/photos/terre/mexico/'
+    folderPath: 'dist/Voyages/Socorro2017/maxi/terre/mexico/',
+    jsonFilePath: 'dist/Voyages/Socorro2017/maxi/terre/mexico/photos.json',
+    filename: '/Voyages/Socorro2017/maxi/terre/mexico/'
   },
   {
-    folderPath: 'dist/Voyages/Socorro2017/photos/terre/teotihuacan/',
-    jsonFilePath: 'dist/Voyages/Socorro2017/photos/terre/teotihuacan/photos.json',
-    filename: '/Voyages/Socorro2017/photos/terre/teotihuacan/'
+    folderPath: 'dist/Voyages/Socorro2017/maxi/terre/teotihuacan/',
+    jsonFilePath: 'dist/Voyages/Socorro2017/maxi/terre/teotihuacan/photos.json',
+    filename: '/Voyages/Socorro2017/maxi/terre/teotihuacan/'
   },
   {
-    folderPath: 'dist/Voyages/Socorro2017/photos/terre/puebla_cholula/',
-    jsonFilePath: 'dist/Voyages/Socorro2017/photos/terre/puebla_cholula/photos.json',
-    filename: '/Voyages/Socorro2017/photos/terre/puebla_cholula/'
+    folderPath: 'dist/Voyages/Socorro2017/maxi/terre/puebla_cholula/',
+    jsonFilePath: 'dist/Voyages/Socorro2017/maxi/terre/puebla_cholula/photos.json',
+    filename: '/Voyages/Socorro2017/maxi/terre/puebla_cholula/'
   },
   {
-    folderPath: 'dist/Voyages/Socorro2017/photos/terre/croisiere/',
-    jsonFilePath: 'dist/Voyages/Socorro2017/photos/terre/croisiere/photos.json',
-    filename: '/Voyages/Socorro2017/photos/terre/croisiere/'
+    folderPath: 'dist/Voyages/Socorro2017/maxi/terre/croisiere/',
+    jsonFilePath: 'dist/Voyages/Socorro2017/maxi/terre/croisiere/photos.json',
+    filename: '/Voyages/Socorro2017/maxi/terre/croisiere/'
   },
   {
-    folderPath: 'dist/Voyages/Socorro2017/photos/terre/decameron/',
-    jsonFilePath: 'dist/Voyages/Socorro2017/photos/terre/decameron/photos.json',
-    filename: '/Voyages/Socorro2017/photos/terre/decameron/'
+    folderPath: 'dist/Voyages/Socorro2017/maxi/terre/decameron/',
+    jsonFilePath: 'dist/Voyages/Socorro2017/maxi/terre/decameron/photos.json',
+    filename: '/Voyages/Socorro2017/maxi/terre/decameron/'
   },
   {
-    folderPath: 'dist/Voyages/Socorro2017/photos/eau/',
-    jsonFilePath: 'dist/Voyages/Socorro2017/photos/eau/photos.json',
-    filename: '/Voyages/Socorro2017/photos/eau/'
+    folderPath: 'dist/Voyages/Socorro2017/maxi/eau/',
+    jsonFilePath: 'dist/Voyages/Socorro2017/maxi/eau/photos.json',
+    filename: '/Voyages/Socorro2017/maxi/eau/'
   }
 ];
 
